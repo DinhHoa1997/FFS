@@ -798,9 +798,8 @@ background: rgba(185,8,18,0.8) !important;
 
 .footer-title {
   font-size: 18px;
-  color: #fff;
+  color: #000;
   font-family: 'Brygada-B';
-  text-transform: uppercase;
   margin-bottom: 20px;
 }
 
@@ -2402,28 +2401,36 @@ color: #FFF;
 
 .vi{
 	background-image:url(../images/flag-vi.png);
-	display: inline-block;
-	width:33px;
-	height:20px;
+	display:inline-block;
+	width:30px;
+	height:30px;
 	background-position:center center;
 	text-indent:-9999em;
+  border-radius: 50%;
   }
 
 .en{
 	background-image:url(../images/flag-en.png);
 	display:inline-block;
-	width:33px;
-	height:20px;
+	width:30px;
+	height:30px;
 	background-position:center center;
 	text-indent:-9999em;
-  
+  border-radius: 50%;
 }
 
 
 .lang {
   padding-top: 5px;
   margin-left: 20px;
-
+  display: flex;
+  align-items: center;
+}
+.lang a{
+  line-height: 1;
+}
+.lang span{
+  margin-right: 15px;
 }
 
 .homecat-title{
@@ -2620,19 +2627,20 @@ color: #FFF;
 }
 .booking-wrapper .item{
   background: #FFF;
-  border-radius: 50x;
-  padding: 30px;
+  border-radius: 5px;
+  padding: 15px;
   
 }
 .booking-wrapper  .btn-dangky
 {
   background: #007feb;
+  color: #FFF;
 }
 .booking-wrapper input{
   width: 100%;
   height: 40px;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid #d1d1d1;
   padding: 5px;
 }
@@ -2647,7 +2655,7 @@ color: #FFF;
 {
   display: flex;
   align-items: center;
-  color: #FFF;
+  color: #212121;
   font-size: 15px;
   margin-bottom: 15px;
 }
@@ -2673,12 +2681,15 @@ color: #FFF;
   list-style-type: none;
 }
 .menuboxfooter li{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+.menuboxfooter a{
+  color: #232323;
 }
 .footer-copyright {
-  background-color: #323232;
+  background-color: #007feb;
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
   text-align: left;
   line-height: 60px;
 }
@@ -2690,6 +2701,7 @@ color: #FFF;
   border: 0;
   padding: 8px 20px 10px;
   border-radius: 4px;
+  border: 1px solid #d2d2d2;
   line-height: 20px;
 }
 
@@ -2698,17 +2710,14 @@ color: #FFF;
 }
 
 .sendmail__btn {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 0;
-  outline: none;
-  font-size: 20px;
-  height: 100%;
-  padding: 0 20px;
-  background-color: transparent;
-  color: #f7983a;
+background-color: #00b9ff;
+border: none;
+padding: 10px 25px;
+margin-top: 20px;
+color: #FFF;
+border-radius: 5px;
+font-family: Brygada;
+font-size: 16px;
 }
 
 .footer-intro {
@@ -2724,21 +2733,24 @@ color: #FFF;
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 
 .footer-social__item {
-  border-radius: 4px;
-  background-color: #fff;
-  width: 30px;
-  color: #111111 !important;
-  height: 30px;
+  border-radius: 50%;
+  background-color: #5f5f5f;
+  width: 40px;
+  color: #FFF !important;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 8px;
-  padding: 5px;
+  padding: 4px;
   text-align: center;
+  font-size: 22px;
+
 }
 
 
