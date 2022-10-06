@@ -10,41 +10,19 @@
 /* Mobile */
 
 @media (max-width: 739px) {
-    .homeinfo-wrapper {
-        padding: 25px 0;
-    }
-
-    .view-more {
-        margin: 20px 0;
-    }
-
-
-    .homeservice-wrapper {
-        padding: 40px 0;
-    }
-
-    .homecat-title, .homecat-title--spc {
-        font-size: 22px;
-    }
-
-    .homeservice-item__name {
-        padding: 15px 8px;
-        font-size: 14px;
-    }
-
-    .homeduan-wrapper {
-        padding: 35px 0;
-    }
-
-    .homeduan-item {
-        width: 50%;
-    }
-
-    .homecat-intro {
-        margin-bottom: 25px;
-    }
-
-
+   .menutab
+   {
+    display: none;
+   }
+   .quytrinh-list
+   {
+    padding: 0px;
+    padding: 0px;
+   }
+   .item-quytrinh .desc-quytrinh, .desc-quytrinh .quytrinh-text, .desc-quytrinh .quytrinh-number
+   {
+    padding: 0px;
+   }
     .footer-block {
         padding-left: 0;
     }
@@ -65,6 +43,124 @@
     .title-page {
         font-size: 22px;
     }
+    .item-quytrinh, .item-quytrinh:nth-child(2n+1) {
+        margin-left: 0px;
+        background-size: auto;
+        margin-right: 0px;
+    }
+    .item-quytrinh:nth-child(2n+1) .quytrinh-number
+    {
+        float:left
+    }
+    .desc-quytrinh .quytrinh-text {
+        float: right;
+    }
+    .item-quytrinh .desc-quytrinh
+    {
+        
+    transform: translate(0px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 135px;
+
+    }
+    .quytrinh-img
+    {
+        display: none;
+    }
+    .item-bieuphi
+    {
+    
+    margin-right: 0px;
+    margin-bottom: 20px;
+    }
+    .cell-more i {
+       display: none;
+    }
+    .item-bieuphi li
+    {
+        font-size: 14px;
+        padding: 11px 5px;
+    }
+    .title-bieuphi {
+        padding: 10px 20px;
+        
+        font-size: 16px;
+       
+    }
+    .homeinfo-item
+    {
+         border:none;
+         flex-wrap: wrap;
+    }
+    .homeinfo-item-img{
+        border:2px solid #00b9ff;
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+    .homeinfo-item-img img {
+        width: 70px;
+        height: 70px;
+        padding: 9px;
+        margin-top: -50px;
+        
+    }
+    .homeinfo-number
+{
+  
+  flex-wrap: wrap;
+}
+.item-homproduct:nth-child(2) .item-product-content
+{
+    top: auto;
+    left:auto;
+    bottom: 0px;
+    left: 0px;
+}
+.item-homproduct img {
+    min-height: 220px;
+    object-fit: cover;
+}
+.item-homproduct
+{
+    margin-bottom: 20px;
+}
+.review-desc, .review-img
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.item-review
+{
+    flex-wrap: wrap;
+}
+.review-img img
+{
+    display: none;
+}
+.homebanner-wrapper {
+    
+ height: auto; 
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    background-position: 100%;
+    color: #FFF;
+    background: #ffc107;
+}
+.homebanner-wrapper .btn-dangky, .homebanner-wrapper .btn-hotline
+{
+    margin-top: 0px!important;
+}
+.booking-wrapper
+{
+    background-color: #f3f3f3;
+    background-image: none;
+}
+.formungtuyen .item
+{
+    width: 100%;
+}
 }
 
 /* Ipad pro */

@@ -48,7 +48,7 @@
     <header class="header hide-on-pad hide-on-tab">
       <div class="grid">
         
-        <div class="flex-container flex-centered">
+        <div class="flex-container align-center">
             <div class="cell-1-4">
               <div class="logo">
                 <a href="/">
@@ -112,7 +112,34 @@
                   <a href="/lien-he/" class=""><span style="background-image:url()">Tin tức </span></a> 
                 </li>
                 </ul>
+                <div class="icon-search" >
+                 <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                  <div class="search-pc" style="">
+                      <form action="/search/" method="get" id="searchformtab">
+                          <input name="qr" id="qr_search" class="kw-mobile" placeholder="Tìm kiếm" type="text">
+                              <a href="#" class="submit-search-pc" onClick=""> 
+                                  <i class="fa fa-search" aria-hidden="true"></i> </a>
 
+                              <a href="#" class="closeX" onClick="$('.search-pc').hide(); return false;">&#10005;</a>        
+                      </form>
+                  </div>
+
+                  <script type="text/javascript">
+
+                      $(".submit-search-pc").click(function(){
+                        if ($("#qr_search").val() != "")
+                          $('#searchformtab').submit(); return false;
+                      
+                      });
+  
+                      $(document).ready(function () {
+                          $(".search-icon").click(function () {
+                              $(".search-pc").stop().slideToggle("fast");
+                              return false;
+                          });
+                      });
+                  </script>  	
+              </div>
               <div class="c"></div>
             </div>
            </div>
@@ -324,7 +351,7 @@
               
                 </div>
                 <div class="flex-container">
-                  <div class="cell-2-4 item-homproduct">
+                  <div class="cell-2-4 tab-cell-1-1 item-homproduct">
                       <img src="/uploaded/dich-vu/dichvu-1.png" alt="">
                       <div class="item-product-content">
                           <h2 class="item-product-name">Chương trình giáo dục
@@ -337,7 +364,7 @@
                             </div>
                       </div>
                   </div>
-                  <div class="cell-2-4 item-homproduct">
+                  <div class="cell-2-4 tab-cell-1-1 item-homproduct">
                     <img src="/uploaded/dich-vu/dichvu-2.png" alt="">
                     <div class="item-product-content">
                         <h2 class="item-product-name">Chương trình giáo dục
@@ -689,7 +716,7 @@
               <div class="flex-container flex-centered">
                 <div class="cell-1-4"></div>
                   <div class="cell-1-4 tab-cell-1-1">
-                      <div class="item">
+                      <div class="homebooking-item">
                           <form  action="/index4.php?page=contact&lang=" method="post" class="frmSubmit" id="regform2" data-alert="Bạn cần nhập đủ thông tin vào những trường màu đỏ" data-captcha ="Mã captcha không đúng" data-success="Thông tin liên hệ đã được gửi thành công !" data-redirect="/contact-success/" class="frmSubmit">
                               <input type="hidden"  name="code" value="save" />     
 
@@ -821,7 +848,7 @@
               </ul>
               </div>
             </div>
-            <div class="cell-1-4">
+            <div class="cell-1-4 tab-cell-1-1">
               <div class="footer-block">
                 <div class="footer-title footer-title-mobile" rel="ct">
                    Link nhanh
@@ -839,7 +866,7 @@
               </ul>
               </div>
             </div>
-            <div class="cell-1-4">
+            <div class="cell-1-4 tab-cell-1-1">
             <div class="footer-title footer-title-mobile" rel="ct">
               Đăng ký nhận tin
            </div>
